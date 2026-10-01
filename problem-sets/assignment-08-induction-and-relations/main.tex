@@ -1,0 +1,269 @@
+\documentclass{article}
+\usepackage{amsthm, amssymb, latexsym, amsmath, amsbsy, graphicx, epsfig}
+\usepackage{ mathrsfs }
+\usepackage{ textcomp }
+
+\title{Writing Assignment \#8: Complete Induction and Relations}
+\author{Robert T Kohn}
+\date{March 31st, 2025}
+
+\begin{document}
+
+\maketitle
+
+{\huge{Section 2.5}}
+\section*{Question 1}
+\subsection*{Part B}
+
+Claim: $(\forall \ n>22 \in N) (\exists s, t \in Z) \ \epsilon \ n=3s+4t \wedge s \geq 3 \wedge t \geq 2$
+
+Case n=23: s=5, t=2
+
+$3(5)+4(2)=15+8=23$
+
+Case n=24: s=4, t=3
+
+$3(4)+4(3)=12+12=24$
+
+Case n=25: s=3, t=4
+
+$3(3)+4(4)=9+16=25$
+
+Then, $\exists k \in Z \epsilon 23 \leq k \leq n$ 
+
+Thus,  $n \geq 25$
+
+So, $n+1=(n-2)+3$
+
+Hence, $n-2\geq  23 \Rightarrow n+1=3s+4t+3$
+
+Then, $n+1=3(s+1)+4t$
+
+$\therefore (\forall \ n>22 \in N) (\exists s, t \in Z) \ \epsilon \ n=3s+4t \wedge s \geq 3 \wedge t \geq 2$
+
+\subsection*{Part C}
+
+Claim: $(\forall \ n>33 \in N) (\exists s, t \in Z) \ \epsilon \ n=4s+5t \wedge s \geq 3 \wedge t \geq 2$
+
+Case n=34: s=6, t=2
+
+$4(6)+5(2)=24+10=34$
+
+Case n=35: s=5, t=3
+
+$4(5)+5(3)=20+15=35$
+
+Case n=36: s=4, t=4
+
+$4(4)+5(4)=16+20=36$
+
+Case n=37: s=3, t=5
+
+$4(3)+5(5)=12+25=37$
+
+Then, $n+1=(n-4)+5$
+
+Thus, $n-4 \geq 34 \Rightarrow n+1=4s+5t+5$
+
+So, $n+1=4s+5t+5 \Rightarrow n+1=4s+5(t+1)$
+
+$\therefore (\forall \ n>33 \in N) (\exists s, t \in Z) \ \epsilon \ n=4s+5t \wedge s \geq 3 \wedge t \geq 2$
+
+\section*{Question 3}
+
+Claim: $a_1=2 \wedge a_2=4 \wedge a_{n+2}=5a_{n+1}-6a_n \wedge n \geq 1 \Rightarrow a_n=2^n$
+
+Case n=1:
+
+$a_1=2^1=2$
+
+Case n=2: 
+
+$a_2=2^2=4$
+
+Then, for some arbitrary k, $a_k=2^k$
+
+Thus, $a_{n+1}=5*a_n-6a_{n-1}$
+
+So, $a_{n+1}=5*2^n-6*2^{n-1}$
+
+Hence, $a_{n+1}=2^{n-1}(5*2-6*1)=2^{n-1}*4=2^{n-1}*2^2$
+
+Then, $a_{n+1}=2^{n+1}$
+
+$\therefore a_1=2 \wedge a_2=4 \wedge a_{n+2}=5a_{n+1}-6a_n \wedge n \geq 1 \Rightarrow a_n=2^n$
+
+
+
+\section*{Question 12}
+\subsection*{Part A}
+
+\
+
+$g1=2; \ $
+
+$g2=2; \ $
+
+$g3=g2*g1=2*2=4 ; \ $
+
+$g4=g3*g2=4*2=8; \ $
+
+$g5=g4*g3=8*4=32;$
+
+\subsection*{Part B}
+
+Claim: $g_n=2^{f_n}$
+
+Case n=1: 
+
+$g_1=2^{f_1}=2$
+
+Case n=2:
+
+$g_2=2^{f_2}=2$
+
+Then, for some arbitrary k, $g_i=2^{f_i}$ for all $i \in \{1,2...k\}$
+
+Thus, $g_{k+1}=g_k*g_{k-1}$
+
+So, $g_{k+1}=2^{f_k}*2^{f_{k-1}}=2^{f_k+f_{k-1}}$
+
+Hence, $f_{k+1}=f_k+f_{k-1}$
+
+$\therefore g_n=2^{f_n}$
+
+\
+
+\
+
+{\huge{Section 3.1}}
+\section*{Question 6}
+\subsection*{Part K}
+
+$R_{11}^{-1} = \{(x, y) \in P \times P \mid x \text{ is a sibling of } y\}$
+
+\subsection*{Part L}
+
+$R_{12}^{-1} = \{(x, y) \in P \times P \mid x \text{ loves } y\}$
+
+\section*{Question 7}
+\subsection*{Part C}
+
+\
+
+$(2,4) \in S \rightarrow (4,z) \in T \rightarrow (2,1)$
+
+$(3,4) \in S \rightarrow (4,z) \in T \rightarrow (3,1) $
+
+$(3,1) \in S \rightarrow (3,z) \in T \rightarrow (3,4) $
+
+$(5,5) \in S \rightarrow (5,z) \in T \rightarrow (5,z) \notin T$
+
+T \textopenbullet \  S = $\{(2,1),(3,1),(3,4)\}$
+
+
+\# I don't know how much work you wanted to see here so I hope this is what you're looking for and let me know if this is too much as well
+
+\subsection*{Part G}
+
+\
+
+$(1,4) \in T \rightarrow (4,z) \notin S$
+
+$(3,5) \in T \rightarrow (5,z) \in S \rightarrow (3,5) $
+
+$(4,1) \in T \rightarrow (1,z) \notin S $
+
+S \textopenbullet \  T = $\{(3,5)\}$
+
+$(3,5) \in $S \textopenbullet \  T $ \rightarrow (5,z) \in R \rightarrow (3,2) $
+
+R \textopenbullet \  (S \textopenbullet \  T)= $\{(3,2)\}$
+
+\
+
+
+\section*{Question 11}
+\subsection*{Part A}
+
+Claim: Rng($R^{-1}$)=Dom(R)
+
+Case 1: Rng($R^{-1}$) $\subseteq$ Dom(R)
+
+Suppose $x \in Rng(R^{-1}$),
+
+Then, $\exists y \epsilon (y,x) \in R^{-1}$
+
+Thus, $(x,y) \in R$
+
+So, $x \in Dom(R)$
+
+Case 2: Dom(R) $\subseteq$ Rng($R^{-1}$)
+
+Suppose $a \in Dom(R)$,
+
+Then, $\exists b \epsilon (a,b) \in R$
+
+Thus, $(b,a) \in R^{-1}$
+
+So, $a \in Rng(R^{-1})$
+
+$\therefore Rng(R^{-1})=Dom(R)$
+
+\subsection*{Part B}
+
+Claim: Dom(S \textopenbullet R) $\subseteq$ Dom(R)
+
+Suppose x $\notin$ Dom(R)
+
+Then, $\nexists y \epsilon (x,y) \in R$
+
+Thus, $\nexists z (x,z) \in $ S \textopenbullet R)
+
+Hence, $ x \notin Dom($S \textopenbullet R)
+
+$\therefore$ Dom(S \textopenbullet R) $\subseteq$ Dom(R)
+
+\subsection*{Part C}
+
+Claim: Dom(S \textopenbullet R) = Dom(R)
+
+Suppose $A=\{1\}, B=\{2,3\}, C=\{4\}, S=\{1,2\}, R=\{3,4\} $
+
+S \textopenbullet R=$\emptyset \Rightarrow$ Dom(S \textopenbullet R)=\{$\emptyset$\}
+
+Dom(R)=\{1\}
+
+Dom(S \textopenbullet R) $\neq$ Dom(R)
+
+$\therefore$ The inequality fails.
+
+\section*{Question 14}
+
+Claim: $A=m \wedge B=n \Rightarrow 2^{mn}$ different relations from A to B
+
+Case m=1:
+
+Then, $A=\{1\} \wedge B=n$
+
+Thus, there are $2^n$ possible subsets.
+
+Suppose $A=\{k\} \Rightarrow 2^{kn} \ relations$
+
+Then, $A=\{k+1\} \Rightarrow 2^{(k+1)*n}$
+
+$\therefore A=m \wedge B=n \Rightarrow 2^{mn} $ different relations from A to B
+
+\section*{Question 17}
+\subsection*{Part A}
+
+This proof gets a grade of F. The claim is false and it assumes that it's composition and inversion commute. 
+
+\subsection*{Part B}
+
+This proof gets an A.
+
+\subsection*{Part F}
+This proof gets a grade of A.
+
+\end{document}
